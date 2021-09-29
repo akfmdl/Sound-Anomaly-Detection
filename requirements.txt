@@ -1,3 +1,4 @@
+grad-cam==1.2.9
 ttach==0.0.3
 tqdm==4.61.1
 numpy==1.20.3
