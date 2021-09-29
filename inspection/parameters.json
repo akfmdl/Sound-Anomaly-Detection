@@ -1,0 +1,16 @@
+{
+    "extract_mel_features": {
+        "sampling_rate": 25600,
+        "n_fft": 2560,
+        "n_mels": 64,
+        "n_step": 1280
+    },
+    "extract_signal_features": {
+        "sampling_rate": 25600,
+        "n_fft": 2560,
+        "n_mels": 64,
+        "n_step": 1280,
+        "frames": 5,
+        "stride": 1
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "algorithms": {
+        "resnet": "resnet_model",
+        "alexnet": "alexnet_model",
+        "vgg": "vgg_model",
+        "densenet": "densenet_model"
+    },
+    "parameters": {
+        "epoch": 10,
+        "batch_size": 64
+    },
+    "class": {
+        "sound": ["GOOD", "NG"]
+    }
+}
