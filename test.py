@@ -1,5 +1,4 @@
 from inspection import *
-from train import *
 import argparse, os
 import consts, utils
 
@@ -16,7 +15,7 @@ def main():
     for data in dataset:
         try:
             class_name = inspector.evaluate(os.path.join(args.data_dir, data), args.method)
-            split_name = data.split(args.delimiter)
+            split_name = data.split(consts.DELIMITER)
             label = split_name[1] if len(split_name) > 2 else ""
             result_ls.append([data, label, class_name])
         except Exception as e:
@@ -39,8 +38,6 @@ if __name__ == '__main__':
                         help="information of model including class types")
     parser.add_argument('--model_path', type=str, default=consts.MODEL_PATH+"/default",
                         help="model path for using in this test")
-    parser.add_argument('--delimiter', type=str, default="-",
-                        help="delimiter splits name, label from dataset name")
 
     args = parser.parse_args()
     main()
